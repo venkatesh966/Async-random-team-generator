@@ -1,10 +1,10 @@
-var fs = require('fs');
-var randomization = require('shuffle-array');
-var math=require('math');
-var wri= fs.createWriteStream("out.txt");
+let fs = require('fs');
+let randomization = require('shuffle-array');
+let math=require('math');
+let wri= fs.createWriteStream("out.txt");
 const readline = require('readline');
-var randomization = require('shuffle-array');
-var path = "C:\\ran\\rand.json";//giving path where required json file located//
+let randomization = require('shuffle-array');
+let path = "C:\\ran\\rand.json";//giving path where required json file located//
 fs.readFile(path, 'utf8', function (err,teamdata) {
   if (err) throw err;
   console.log(teamdata);
@@ -75,7 +75,7 @@ const rl = readline.createInterface({
     }
   });
   //JUST DISPLAYING THE RESULTS IN BROWSER//
-  var http = require('http');//http module importing
+  let http = require('http');//http module importing
   
   http.createServer(function(req, res){        //callback function
     res.writeHead(200, {'Content-type':'text/plain'});
